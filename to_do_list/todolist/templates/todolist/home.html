@@ -42,7 +42,7 @@
         <tr>
          <th scope="row">{{forloop.counter}}</th>
          <td>{{ 每件事.thing }}</td>
-         <td><a class="text-info" href="{% url 'todolist:编辑' ">编辑</a></td>
+         <td><a class="text-info" href="{% url 'todolist:编辑' %} ">编辑</a></td>
          <td>
           <form method="POST" action="{% url 'todolist:划掉' 每件事.id %}">
             {% csrf_token %}
